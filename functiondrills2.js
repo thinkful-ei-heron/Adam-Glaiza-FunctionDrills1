@@ -1,18 +1,23 @@
+//Function  JediName
 function jediName(firstName, lastName) {
     return lastName.slice(0,3) + firstName.slice(0,2);
 }
 
-console.log(jediName('Beyonce', 'Knowles'));
+const jediResult = jediName('Beyonce', 'Knowles');
+console.log(jediResult);
 
-
+//Function beyond
 function beyond(num) {
-    if (num < 0) {
-        return'To Negative Infinity and Beyond';
-    } else if (num > 0 || num < 0) {
-        return 'To Infinity and Beyond';
+    if (num === -Infinity || num === Infinity) {
+        console.log('And Beyond');
+    } else if (isFinite(num) && num > 0) {
+        console.log('To Infinity');
+    } else if (isFinite(num) && num < 0) {
+        console.log('To negative infinity');
     } else if (num === 0) {
-        return'Staying Home';
-    } 
+        console.log('Staying Home');
+    }
 }
 
-beyond(-5);
+beyond(20);
+
