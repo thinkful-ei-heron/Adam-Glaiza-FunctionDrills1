@@ -1,0 +1,1 @@
+1) Write a statement which logs 'Hi, my name is Chris and I'm 29 years old' to the console (use your name and you can lie about your age).
