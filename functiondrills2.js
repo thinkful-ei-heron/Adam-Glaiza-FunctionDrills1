@@ -23,9 +23,27 @@ function beyond(num) {
 beyond(20);
 
 //Function decode
-// function decode() {
+function decode(message) {
+    let word = message.split(' ');
+    let returnWord = '';
 
-// }
+    for(let i=0; i < word.length; i++) {
+        if(word[i][0] === 'a') {
+             returnWord += word[i][2];
+        } else if(word[i][0] === 'b') {
+            returnWord += word[i][3];
+        } else if(word[i][0] === 'c') {
+            returnWord += word[i][4];
+        } else if(word[i][0] === 'd') {
+            returnWord += word[i][5];
+        } else {
+            returnWord += ' ';
+        }
+    }
+    console.log(returnWord);
+}
+
+decode('craft block argon meter bells brown croon droop');
 
 //Function daysInMonth
 function daysInMonth(month, leapYear) {
