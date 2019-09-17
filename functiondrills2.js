@@ -65,14 +65,14 @@ daysInMonth('June', true);
 //function rockPaperScissor
 function rockPaperScissor(){
     //rock = 1 , scissors =2, paper =3
-    const randomNo1 = Math.floor(Math.random() *3) + 1;
-    const randomNo2 = Math.floor(Math.random() *3) + 1;
+    const player1 = Math.floor(Math.random() *3) + 1;
+    const player2 = Math.floor(Math.random() *3) + 1;
 
-    if ((randomNo1 === 1 && randomNo2 === 2) || (randomNo1 === 2 && randomNo2 === 1)) {
+    if ((player1 === 1 && player2 === 2) || (player1 === 2 && player2 === 1)) {
         console.log('Rocks beats scissors');
-    } else if ((randomNo1 === 2 && randomNo2 === 3) || (randomNo1 === 3 && randomNo2 === 2)) {
+    } else if ((player1 === 2 && player2 === 3) || (player1 === 3 && player2 === 2)) {
         console.log('Scissors beats paper');
-    } else if ((randomNo1 === 3 && randomNo2 === 1) || (randomNo1 === 1 && randomNo2 === 3)) {
+    } else if ((player1 === 3 && player2 === 1) || (player1 === 1 && player2 === 3)) {
         console.log('Paper beats rock');
     } else {
         throw console.error('error');
@@ -80,4 +80,4 @@ function rockPaperScissor(){
     }
 }
 
-rockPaperScissor()
+rockPaperScissor();
